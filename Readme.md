@@ -1,67 +1,70 @@
-# Today's Objective: Conway's Game of Life
+# READ ONLY version of Conway's Game of Life
 
-# In honour of John Conway
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[John Conway](https://en.wikipedia.org/wiki/John_Horton_Conway) (1937-2020) was an English mathematician. He passed away earlier this week at the age of 82. He had many accomplishments. Among those accomplishments, the [Game of Life](https://simple.wikipedia.org/wiki/Conway%27s_Game_of_Life) is the most popularly famous. 
+## Available Scripts
 
-* [Rest in peace, John Conway.](https://xkcd.com/2293/)
+In the project directory, you can run:
 
-## Prize
+### `yarn start`
 
-$25 CAD Amazon gift card + bragging rights.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Tip: Read the [General Information Document](General%20Information.md) for more info on how to get started and submit.
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-## Objective
+### `yarn test`
 
-Today's objective is to build a READ ONLY version of Conway's Game of Life.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Requirements
+### `yarn build`
 
-Create a read-only version of the Game of Life.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Bonus points
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-Bonus points will be awarded for:
-* Creating a writable board
-* Speed controls
-* Zoom controls
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `yarn eject`
 
-### Rules for the Game of Life
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-(From [Wikipedia](https://simple.wikipedia.org/wiki/Conway%27s_Game_of_Life))
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-The game is played on a grid of squares called cells, each cell is black (alive) or white (dead). When people are playing the game, they start by making some dead cells alive. Then the alive cells can make other cells alive or dead because of the rules of the game. The rules are:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-1. Any alive cell that is touching less than two alive neighbours dies.
-1. Any alive cell touching four or more alive neighbours dies.
-1. Any alive cell touching two or three alive neighbours does nothing.
-1. Any dead cell touching exactly three alive neighbours becomes alive.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-The way a player sets up the first alive cells starts the game. The first level (generation) is made by using the 4 rules. After the player is done changing the cells, they do the same thing all over again to make the next level. The game is over when all the cells are dead or all the cells are alive or the game is doing the same thing over and over. The Game of Life is Turing-complete.
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Frameworks:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Any. It is completely possible to build this using jQuery. You can use React, Vue, Angular if you wish.
+### Code Splitting
 
-### Restrictions
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-* Your project must use JavaScript.
+### Analyzing the Bundle Size
 
-There are no other restrictions.
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Tips for success:
+### Making a Progressive Web App
 
-1. The project is intentionally simple so you can focus on code quality.
-1. The requirements are intentionally minimalistic so you can get as creative as you'd like.
-1. You get a LOT of time for code review comments. So you can win even if you feel your project isn't great, simply on the strength of your code review comments!
-1. Keep in mind, 33% of your score is based on aesthetic appeal! So try to make it look nice.
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-## Resources
+### Advanced Configuration
 
-* [Cornell's assignment page](http://pi.math.cornell.edu/~lipa/mec/lesson6.html)
-* [Bitstorm's implementation](https://bitstorm.org/gameoflife/)
-* [Golly, a very advanced implementation](http://golly.sourceforge.net/webapp/golly.html)
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
