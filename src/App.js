@@ -27,7 +27,9 @@ function App() {
         const newGrid = initGrid(newSize);
         setState({ ...state, size: newSize, grid: newGrid });
     };
-
+    const toggleClass = (e) => {
+        e.target.classList.toggle("active");
+    };
     return (
         <div className="App">
             <section className="hero is-fullheight">
@@ -68,7 +70,10 @@ function App() {
                                         {row.map((item) => {
                                             // console.log("col", item);
                                             return (
-                                                <div className="flex-item">
+                                                <div
+                                                    className="flex-item"
+                                                    onClick={toggleClass}
+                                                >
                                                     {/* {item === null
                                                         ? "null"
                                                         : "O"} */}

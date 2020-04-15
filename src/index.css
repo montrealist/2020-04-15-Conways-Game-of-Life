@@ -46,6 +46,10 @@ code {
     height: auto;
 }
 
+.flex-item.active {
+    background: none;
+}
+
 .flex-item:before {
     content: "";
     float: left;
