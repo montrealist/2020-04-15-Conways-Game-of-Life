@@ -11,9 +11,17 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
-.container {
-    max-width: 90vh !important;
+
+.hero-body > .container {
+    max-width: 85vh;
 }
+
+@media screen and (max-width: 1024px) {
+    .hero-body > .container {
+        max-width: 70vh;
+    }
+}
+
 .flex-container {
     padding: 0;
     margin: 0;
@@ -26,6 +34,7 @@ code {
     justify-content: space-around;
     line-height: 30px;
 }
+
 .flex-item {
     background: tomato;
     margin: 1px;
@@ -36,6 +45,7 @@ code {
     flex: 1 0 auto;
     height: auto;
 }
+
 .flex-item:before {
     content: "";
     float: left;

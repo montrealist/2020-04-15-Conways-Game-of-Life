@@ -39,24 +39,20 @@ function App() {
                                     Game of Life!
                                 </h1>
                             </div>
-                            <div
-                                id="navbarBasicExample"
-                                className="navbar-menu"
-                            >
-                                <div className="navbar-start">
-                                    <span className="navbar-item">
-                                        Please enter size of grid:
-                                    </span>
-                                    <span className="navbar-item">
-                                        <input
-                                            className="input"
-                                            type="text"
-                                            id="size"
-                                            value={state.size}
-                                            onChange={handleChange}
-                                        ></input>
-                                    </span>
-                                </div>
+
+                            <div className="navbar-start">
+                                <span className="navbar-item">
+                                    Please enter size of grid:
+                                </span>
+                                <span className="navbar-item">
+                                    <input
+                                        className="input"
+                                        type="text"
+                                        id="size"
+                                        value={state.size}
+                                        onChange={handleChange}
+                                    ></input>
+                                </span>
                             </div>
                         </div>
                     </nav>
